@@ -1,5 +1,5 @@
-# challengeDevOps
-Challenge para DevOps
+# ChallengeDevOps
+
 
 
 <h2>Nivel Docker Jenkins</h2>
@@ -23,3 +23,4 @@ g)Debe generar un Jenkinsfile con los siguientes parámetros:
 
 <h2>Criterios de aceptacion</h2>
 
+Debería subir a este repositorio los dockerfiles , jenkinsfile y/o dockercompose solicitados, además de un readme documentando todos los comandos ejecutados en su orden y descripcion. de su imagen se levantara un contenedor el cual tendra el jenkins para ejecutar el job
