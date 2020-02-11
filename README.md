@@ -24,3 +24,30 @@ g)Debe generar un Jenkinsfile con los siguientes parámetros:
 <h2>Criterios de aceptacion</h2>
 
 Debería subir a un repositorio los dockerfiles , jenkinsfile y/o dockercompose solicitados, además de un readme documentando todos los comandos ejecutados en su orden y descripcion. de su imagen se levantara un contenedor el cual tendra el jenkins para ejecutar el job
+
+
+<h2>Nivel Kubernetes </h2>
+
+Deberera crear infra como codigo mediante kubernetes 
+Su tarea es proporcionar un repositorio git que contendrá el código para construir un clúster de Kubernetes con las siguientes especificaciones:
+
+El clúster tendrá mínimo 2 nodos de trabajo.
+Los worker tendrán:
+1 nodos completos no preferentes de tipo n1-standard-2 (sin escala automática)
+1 nodos preferentes de tipo n1-standard-2 
+El clúster tendrá 1 usuario administrador (admin) y 5 usuarios regulares (usuario-1, usuario-2, etc.)
+El clúster tendrá 2 espacios de nombres
+usuario-1
+usuario-2
+El usuario administrador tendrá permisos de lectura y escritura para todos los espacios de nombres
+el usuario-1 tendrá permisos de lectura para el clúster y permisos de escritura para el espacio de nombres del usuario-1
+Del mismo modo, el usuario 2 tendrá acceso de lectura al clúster y acceso de escritura al espacio de nombres del usuario 2
+Cree un archivo README.md que proporcione instrucciones sobre cómo usar su repositorio
+Puede elegir cualquier herramienta disponible gratuitamente que considere útil en las tareas anteriores. Para Azure y Google Cloud, puede haber algunas diferencias en los requisitos este challenge está adaptado para AWS. Traduzca los requisitos al similar según la plataforma.
+
+<h2> Criterios de aceptación </h2>
+
+Debe proporcionar su código completo para que podamos replicar su clúster
+Puede usar cualquier servicio en la nube de su selección (AWS, Google Cloud) para construir el clúster anterior (no necesita proporcionar acceso al clúster, solo al código)
+El código debe ser limpio legible y sencillo
+Debe documentar cualquier paso que no esté automatizado en README.md
